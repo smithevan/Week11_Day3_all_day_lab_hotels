@@ -24,4 +24,15 @@ public class ConferenceRoomTest {
         assertEquals(100, conferenceRoom1.getCapacity());
     }
 
+    @Test
+    public void testGuestArrayStartsAtZero() {
+        assertEquals(0, conferenceRoom1.occupancy());
+    }
+
+    @Test
+    public void canAddGuestToConferenceRoom() {
+        conferenceRoom1.addGuest(guest1);
+        assertEquals(1, conferenceRoom1.occupancy());
+    }
+
 }

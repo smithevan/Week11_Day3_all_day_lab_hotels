@@ -4,12 +4,12 @@ public class ConferenceRoom {
 
     private String roomName;
     private int capacity;
-    private ArrayList<Guest> guest;
+    private ArrayList<Guest> guests;
 
     public ConferenceRoom(String roomName, int capacity) {
         this.roomName = roomName;
         this.capacity = capacity;
-        this.guest = new ArrayList<Guest>();
+        this.guests = new ArrayList<Guest>();
     }
 
 
@@ -19,5 +19,14 @@ public class ConferenceRoom {
 
     public int getCapacity() {
         return this.capacity;
+    }
+
+
+    public int occupancy() {
+        return this.guests.size();
+    }
+
+    public void addGuest(Guest guest) {
+        this.guests.add(guest);
     }
 }
