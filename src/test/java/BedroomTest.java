@@ -29,4 +29,9 @@ public class BedroomTest {
         assertEquals("Double", bedroom1.getType());
     }
 
+    @Test
+    public void testGuestArrayStartsAtZero() {
+        assertEquals(0, bedroom1.occupancy());
+    }
+
 }

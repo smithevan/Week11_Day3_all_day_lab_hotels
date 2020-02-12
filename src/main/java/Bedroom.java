@@ -17,6 +17,7 @@ public class Bedroom {
         this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.type = type;
+        this.guest = new ArrayList<Guest>();
     }
 
 
@@ -30,5 +31,9 @@ public class Bedroom {
 
     public String getType() {
         return this.type;
+    }
+
+    public int occupancy() {
+        return this.guest.size();
     }
 }
