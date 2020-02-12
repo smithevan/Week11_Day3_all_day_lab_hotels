@@ -10,9 +10,8 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Bedroom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bedroom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConferenceRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConferenceRoom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Hotel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BedroomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BedroomTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ConferenceRoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ConferenceRoomTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/HotelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HotelTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,42 +55,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HotelTest.testThatGuestCheckedInIsExactGuest">
-    <configuration name="BedroomTest.testCanRemoveGuestFromBedroom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ConferenceRoomTest.testGuestsCannotBeAddedIfRoomIsFull">
+    <configuration name="BedroomTest.testGuestCannotBeAddedToRoomIfFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="all_day_lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BedroomTest" />
-      <option name="METHOD_NAME" value="testCanRemoveGuestFromBedroom" />
+      <option name="METHOD_NAME" value="testGuestCannotBeAddedToRoomIfFull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConferenceRoomTest.canRemoveGuestFromConferenceRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConferenceRoomTest.testGuestsCannotBeAddedIfRoomIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="all_day_lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ConferenceRoomTest" />
-      <option name="METHOD_NAME" value="canRemoveGuestFromConferenceRoom" />
+      <option name="METHOD_NAME" value="testGuestsCannotBeAddedIfRoomIsFull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelTest.testHotelCanCheckInGuestsToBedrooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HotelTest.testHotelCanCheckGuestsOutOfBedroom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="all_day_lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HotelTest" />
-      <option name="METHOD_NAME" value="testHotelCanCheckInGuestsToBedrooms" />
+      <option name="METHOD_NAME" value="testHotelCanCheckGuestsOutOfBedroom" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelTest.testHotelCanCheckInGuestsToConferenceRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HotelTest.testHotelCanCheckGuestsOutOfConferenceRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="all_day_lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HotelTest" />
-      <option name="METHOD_NAME" value="testHotelCanCheckInGuestsToConferenceRoom" />
+      <option name="METHOD_NAME" value="testHotelCanCheckGuestsOutOfConferenceRoom" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConferenceRoomTest.testGuestsCannotBeAddedIfRoomIsFull" />
+        <item itemvalue="JUnit.BedroomTest.testGuestCannotBeAddedToRoomIfFull" />
+        <item itemvalue="JUnit.HotelTest.testHotelCanCheckGuestsOutOfConferenceRoom" />
+        <item itemvalue="JUnit.HotelTest.testHotelCanCheckGuestsOutOfBedroom" />
         <item itemvalue="JUnit.HotelTest.testThatGuestCheckedInIsExactGuest" />
-        <item itemvalue="JUnit.HotelTest.testHotelCanCheckInGuestsToConferenceRoom" />
-        <item itemvalue="JUnit.HotelTest.testHotelCanCheckInGuestsToBedrooms" />
-        <item itemvalue="JUnit.ConferenceRoomTest.canRemoveGuestFromConferenceRoom" />
-        <item itemvalue="JUnit.BedroomTest.testCanRemoveGuestFromBedroom" />
       </list>
     </recent_temporary>
   </component>

@@ -38,6 +38,7 @@ public class Bedroom {
     }
 
     public void addGuest(Guest guest) {
+        if (capacity > guests.size())
         this.guests.add(guest);
     }
 

@@ -27,6 +27,7 @@ public class ConferenceRoom {
     }
 
     public void addGuest(Guest guest) {
+        if (this.capacity > guests.size())
         this.guests.add(guest);
     }
 
