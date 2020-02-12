@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b6c6b50-5b7e-4fe0-9e9a-e38f726a53a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HotelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bedroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bedroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConferenceRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConferenceRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BedroomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BedroomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bedroom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bedroom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BedroomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BedroomTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConferenceRoomTest.canAddGuestToConferenceRoom">
+  <component name="RunManager" selected="JUnit.HotelTest.hotelStartsWithConferenceRooms">
     <configuration name="BedroomTest.testCanAddGuestsToBedRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="all_day_lab" />
       <option name="PACKAGE_NAME" value="" />
@@ -64,30 +58,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConferenceRoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="all_day_lab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ConferenceRoomTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ConferenceRoomTest.canAddGuestToConferenceRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="all_day_lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ConferenceRoomTest" />
       <option name="METHOD_NAME" value="canAddGuestToConferenceRoom" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConferenceRoomTest.canGetConferenceRoomName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="all_day_lab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ConferenceRoomTest" />
-      <option name="METHOD_NAME" value="canGetConferenceRoomName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,13 +78,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HotelTest.hotelStartsWithBedrooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="all_day_lab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HotelTest" />
+      <option name="METHOD_NAME" value="hotelStartsWithBedrooms" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelTest.hotelStartsWithConferenceRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="all_day_lab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HotelTest" />
+      <option name="METHOD_NAME" value="hotelStartsWithConferenceRooms" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HotelTest.hotelStartsWithConferenceRooms" />
+        <item itemvalue="JUnit.HotelTest.hotelStartsWithBedrooms" />
         <item itemvalue="JUnit.ConferenceRoomTest.canAddGuestToConferenceRoom" />
         <item itemvalue="JUnit.ConferenceRoomTest.testGuestArrayStartsAtZero" />
         <item itemvalue="JUnit.BedroomTest.testCanAddGuestsToBedRoom" />
-        <item itemvalue="JUnit.ConferenceRoomTest" />
-        <item itemvalue="JUnit.ConferenceRoomTest.canGetConferenceRoomName" />
       </list>
     </recent_temporary>
   </component>

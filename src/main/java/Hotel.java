@@ -10,11 +10,12 @@ public class Hotel {
         this.conferenceRooms = conferenceRooms;
     }
 
-//    public Bedroom(String roomNumber, int capacity, String type) {
-//        this.roomNumber = roomNumber;
-//        this.capacity = capacity;
-//        this.type = type;
-//        this.guest = new ArrayList<Guest>();
-//    }
+    public int bedroomCount() {
+        return this.bedrooms.size();
+    }
 
+
+    public int conferenceRoomCount() {
+        return this.conferenceRooms.size();
+    }
 }
