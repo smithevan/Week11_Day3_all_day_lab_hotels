@@ -8,12 +8,14 @@ public class BedroomTest {
     private Guest guest1;
     private Guest guest2;
     private Bedroom bedroom1;
+    private Bedroom bedroom2;
 
     @Before
     public void Setup() {
         guest1 = new Guest("Bob");
         guest2 = new Guest("Mike");
-        bedroom1 = new Bedroom("222", 1, "Double");
+        bedroom1 = new Bedroom("222", "Double");
+        bedroom2 = new Bedroom("278", "Single");
     }
 
     @Test
@@ -23,7 +25,7 @@ public class BedroomTest {
 
     @Test
     public void getCapacity() {
-        assertEquals(1, bedroom1.getCapacity());
+        assertEquals(2, bedroom1.getCapacity());
     }
 
     @Test
@@ -53,7 +55,15 @@ public class BedroomTest {
     public void testGuestCannotBeAddedToRoomIfFull() {
         bedroom1.addGuest(guest1);
         bedroom1.addGuest(guest2);
-        assertEquals(1, bedroom1.occupancy());
+        bedroom1.addGuest(guest2);
+        assertEquals(2, bedroom1.occupancy());
     }
+
+    @Test
+    public void canGetDifferentNightlyRateByType(){
+        assertEquals(40, bedroom1.getNightlyRate());
+        assertEquals(25, bedroom2.getNightlyRate());
+    }
+
 
 }

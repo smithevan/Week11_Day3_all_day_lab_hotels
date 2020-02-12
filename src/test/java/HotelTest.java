@@ -25,10 +25,10 @@ public class HotelTest {
     @Before
     public void before() {
 
-        bedroom1 = new Bedroom("100", 1, "Single");
-        bedroom2 = new Bedroom("200", 2, "Double");
-        bedroom3 = new Bedroom("300", 2, "Double");
-        bedroom4 = new Bedroom("400", 1, "Single");
+        bedroom1 = new Bedroom("100", "Single");
+        bedroom2 = new Bedroom("200", "Double");
+        bedroom3 = new Bedroom("300","Double");
+        bedroom4 = new Bedroom("400", "Single");
         conferenceRoom1 = new ConferenceRoom("Small Meeting Room", 20);
         conferenceRoom2 = new ConferenceRoom("Medium Meeting Room", 40);
         conferenceRoom3 = new ConferenceRoom("Large Meeting Room", 60);
@@ -89,6 +89,12 @@ public class HotelTest {
         hotel.checkInConferenceRoom(conferenceRoom1, guest1);
         hotel.checkOutConferenceRoom(conferenceRoom1, guest1);
         assertEquals(0, conferenceRoom1.occupancy());
+    }
+
+    @Test
+    public void hotelCanBookRoom(){
+        Booking newBooking = hotel.bookRoom(bedroom1, guest1, 3);
+        assertEquals(bedroom1, newBooking.getBedroom());
     }
 
 }

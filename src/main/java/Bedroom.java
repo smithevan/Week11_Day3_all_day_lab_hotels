@@ -12,12 +12,20 @@ public class Bedroom {
     private int capacity;
     private String type;
     private ArrayList<Guest> guests;
+    private int nightlyRate;
 
-    public Bedroom(String roomNumber, int capacity, String type) {
+    public Bedroom(String roomNumber, String type) {
         this.roomNumber = roomNumber;
-        this.capacity = capacity;
         this.type = type;
         this.guests = new ArrayList<Guest>();
+        if (this.type == "Single"){
+            this.capacity = 1;
+            this.nightlyRate = 25;
+        }
+        else {
+            this.capacity = 2;
+            this.nightlyRate = 40;
+        }
     }
 
 
@@ -51,5 +59,9 @@ public class Bedroom {
             return guests.get(i);
         }
         return null;
+    }
+
+    public int getNightlyRate() {
+        return this.nightlyRate;
     }
 }
