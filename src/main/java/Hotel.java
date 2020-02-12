@@ -18,4 +18,12 @@ public class Hotel {
     public int conferenceRoomCount() {
         return this.conferenceRooms.size();
     }
+
+    public void checkInBedroom(Bedroom bedroom1, Guest guest1) {
+        bedroom1.addGuest(guest1);
+    }
+
+    public void checkInConferenceRoom(ConferenceRoom conferenceRoom1, Guest guest1) {
+        conferenceRoom1.addGuest(guest1);
+    }
 }

@@ -35,4 +35,11 @@ public class ConferenceRoomTest {
         assertEquals(1, conferenceRoom1.occupancy());
     }
 
+    @Test
+    public void canRemoveGuestFromConferenceRoom() {
+        conferenceRoom1.addGuest(guest1);
+        conferenceRoom1.removeGuest(guest1);
+        assertEquals(0, conferenceRoom1.occupancy());
+    }
+
 }

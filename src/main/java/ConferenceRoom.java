@@ -29,4 +29,8 @@ public class ConferenceRoom {
     public void addGuest(Guest guest) {
         this.guests.add(guest);
     }
+
+    public void removeGuest(Guest guest1) {
+        this.guests.remove(guest1);
+    }
 }

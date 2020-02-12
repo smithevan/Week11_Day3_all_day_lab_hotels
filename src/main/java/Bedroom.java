@@ -40,4 +40,15 @@ public class Bedroom {
     public void addGuest(Guest guest) {
         this.guests.add(guest);
     }
+
+    public void removeGuest(Guest guest1) {
+        this.guests.remove(guest1);
+    }
+
+    public Guest guestCheck() {
+        for (int i=1; i< guests.size(); i++){
+            return guests.get(i);
+        }
+        return null;
+    }
 }

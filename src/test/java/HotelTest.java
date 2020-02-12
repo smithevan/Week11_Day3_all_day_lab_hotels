@@ -16,6 +16,10 @@ public class HotelTest {
     private ConferenceRoom conferenceRoom2;
     private ConferenceRoom conferenceRoom3;
     private ConferenceRoom conferenceRoom4;
+    private Guest guest1;
+    private Guest guest2;
+    private Guest guest3;
+    private Guest guest4;
 
 
     @Before
@@ -53,6 +57,24 @@ public class HotelTest {
     @Test
     public void hotelStartsWithConferenceRooms(){
         assertEquals(4, hotel.conferenceRoomCount());
+    }
+
+    @Test
+    public void testHotelCanCheckInGuestsToBedrooms(){
+        hotel.checkInBedroom(bedroom1, guest1);
+        assertEquals(1, bedroom1.occupancy());
+    }
+
+    @Test
+    public void testHotelCanCheckInGuestsToConferenceRoom(){
+        hotel.checkInConferenceRoom(conferenceRoom1, guest1);
+        assertEquals(1, conferenceRoom1.occupancy());
+    }
+
+    @Test
+    public void testThatGuestCheckedInIsExactGuest(){
+        hotel.checkInBedroom(bedroom1, guest1);
+        assertEquals(guest1, bedroom1.guestCheck());
     }
 
 }
